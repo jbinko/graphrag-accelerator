@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@v4
       - run: chmod +x setup_build.sh
       - run: ./setup_build.sh
-      - run: ./infra/deploy.sh
+      - run: ./infra/deploy.sh -p deploy.parameters.json
