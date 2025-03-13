@@ -27,4 +27,6 @@ jobs:
           name: "dynamic.deploy.parameters.json"
           json: ${{ secrets.DEPLOY_PARAMS_JSON }}
           dir: './infra/'
-      - run: ./infra/deploy.sh -p ./infra/dynamic.deploy.parameters.json
+      - name: Infra Deploy
+        working-directory: ./infra/
+        run: deploy.sh -p dynamic.deploy.parameters.json
