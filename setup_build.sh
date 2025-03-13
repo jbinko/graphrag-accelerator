@@ -26,9 +26,9 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scrip
 wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq \
     && chmod +x /usr/bin/yq
 
-rm -rf /var/lib/apt/lists/* \
-    && apt-get purge -y --auto-remove \
-    && apt-get autoremove \
-    && apt-get clean
+sudo rm -rf /var/lib/apt/lists/* \
+    && sudo apt-get purge -y --auto-remove \
+    && sudo apt-get autoremove \
+    && sudo apt-get clean
 
 curl -sSL https://install.python-poetry.org | python3 -
