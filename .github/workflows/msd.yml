@@ -5,6 +5,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: ./setup_build.sh
       - name: Check out repository code
         uses: actions/checkout@v4
+      - run: ./setup_build.sh
