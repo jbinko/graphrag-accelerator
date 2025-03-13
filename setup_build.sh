@@ -1,4 +1,6 @@
-apt-get update && apt-get install -y \
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install -y \
     ca-certificates \
     libicu-dev \
     git \
