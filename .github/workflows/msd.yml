@@ -8,5 +8,5 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: chmod +x setup_build.sh
-      - run: ./setup_build.sh
+      - run: sudo ./setup_build.sh
       - run: ./infra/deploy.sh -p ./infra/deploy.parameters.json
