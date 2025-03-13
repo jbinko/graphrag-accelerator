@@ -4,6 +4,7 @@ on: [push]
 jobs:
   MSD:
     runs-on: ubuntu-latest
+    environment: production
     permissions:
       contents: read
       pages: write
